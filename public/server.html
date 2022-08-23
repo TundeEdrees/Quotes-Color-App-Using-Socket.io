@@ -1,0 +1,35 @@
+<html> 
+<head> 
+	<title> Real Time Quotes With Color | Admin Panel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+ </head> 
+<body> 
+	<div class="container"> 
+		<div>
+			<h1 class="font" style="text-align: center;">
+				Add Your Quotes in Realtime using <br><code> Sockets</code> and <code> node.js </code>
+			</h1> 
+			<hr> 
+			
+			<div class="box">
+				<!-- Text area where admin will write quote. Could be input tag also-->
+				<form id="dform">
+					<textarea id="quotebox" required></textarea>
+					<br> 
+					<br>
+					<!-- Quotes Tranferred to server when button is clicked via "new" event-->
+					<input id="color" name="Color Picker" type="color" value="#e0d7f9" />
+					<br>
+					<br>
+					<div>
+						<button id="sender">"Add a quote"</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div> 
+    <script src="/js/app.js"></script>
+</body> 
+</html> 
